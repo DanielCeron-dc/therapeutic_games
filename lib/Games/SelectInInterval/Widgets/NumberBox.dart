@@ -14,7 +14,8 @@ class NumberBox extends StatefulWidget {
 class _NumberBoxState extends State<NumberBox> {
 
   Widget _uwu;
-  int number = 0; 
+  int number = 0;
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * .45;

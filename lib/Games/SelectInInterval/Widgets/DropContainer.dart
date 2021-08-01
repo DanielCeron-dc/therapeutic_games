@@ -13,12 +13,12 @@ class _DropContainerState extends State<DropContainer> {
   @override
   Widget build(BuildContext context) {
     SelecIntervalProvider provider =
-        Provider.of<SelecIntervalProvider>(context, listen: true);
+    Provider.of<SelecIntervalProvider>(context, listen: true);
     provider = SelecIntervalProvider.instance;
     print("LEVEL " + provider.level.toString());
     String texto = "";
     if (provider.finalizate) {
-      texto = "GG EZ PLAY, parecen bots";
+      texto = "Ganaste";
     } else {
       texto = provider.level == 0
           ? 'Menores a ${provider.limits[0]}'

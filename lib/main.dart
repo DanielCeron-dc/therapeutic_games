@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import 'package:therapeutic_games/Games/SelectInInterval/SelectInInterval.dart';
 import 'Games/SelectInInterval/SelectIntervalProvider.dart';
+import 'Menu/Menu.dart';
 // import 'package:therapeutic_games/Games/SelectInInterval/Widgets/NumberBox.dart';
 
 void main() => runApp(const MyApp());
@@ -23,10 +24,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: _title,
-        home: Scaffold(
-          appBar: AppBar(title: Text("Games")),
-          body: SelectInInterval(),
-        ),
+
+        home: Menu(),
       ),
     );
   }
